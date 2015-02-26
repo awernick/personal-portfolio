@@ -27,7 +27,7 @@
           .row
             .col-md-12
               = label_tag :message
-              = text_area_tag :message, nil, class: 'form-control', required: true, maxlength: 500
+              = text_area_tag :message, nil, rows: 3, class: 'form-control', required: true, maxlength: 500
 
           = button_tag 'Send', class: 'btn btn-default btn-lg', type: 'submit'
     .col-sm-1.col-md-1.col-lg-1
@@ -43,3 +43,5 @@
         (915) 240 - 8525
       .row
         alan.wernik@gmail.com
+      .row
+        = link_to 'Download Resume', asset_path("wernick_resume.pdf"), class: 'btn btn-default btn-md'
