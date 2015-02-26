@@ -6,6 +6,9 @@ class PortafolioController < ApplicationController
   def resume
   end
 
-  def work
+  def portfolio
+  end
+
+  def contact
   end
 end

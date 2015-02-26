@@ -1,11 +1,16 @@
-%nav.navbar.navbar-default
+%nav.navbar.navbar-default.navbar-fixed-top
   .container.container-underlined
     .navbar-header
       = link_to 'Alan Wernick', root_path, class: 'navbar-brand'
-    %ul.nav.navbar-nav.navbar-right
-      %li
-        = link_to 'Work', '#'
-      %li
-        = link_to 'About', '#'
-      %li
-        = link_to 'Contact', '#'
+      %button.navbar-toggle.collapsed{ 'data-toggle' => 'collapse', 'data-target' => '#nav-links' }
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+    .collapse.navbar-collapse#nav-links
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          = link_to 'Work', '#'
+        %li
+          = link_to 'About', '#'
+        %li
+          = link_to 'Contact', '#'
