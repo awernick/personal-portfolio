@@ -16,9 +16,102 @@
  *
  */
 
-@import "font-awesome";
+$background: #FFF;
 
-$background: #EBEBEA;
+
+/************** Header **************/
+
+
+.navbar-default {
+  background-color: $background;
+  border: 0px;
+
+  .navbar-brand {
+    font-size: 32pt;
+    font-family: 'Proxima Nova';
+    color: #333;
+  }
+}
+
+.container-underlined {
+  margin-top: 25px;
+  padding-bottom: 10px;
+  background-color: $background;
+  border-bottom: 1px solid #D3D3D3;
+}
+
+
+/************** Body **************/
+
+.content {
+   padding-top: 90px;
+
+  .jumbotron {
+    background-color: $background;
+    font-size: 20px;
+
+  }
+}
+
+
+/************** Foooter **************/
+
+
+.footer {
+  margin-top: 68px;
+  margin-bottom: 20px;
+
+  .container {
+    border-top: 1px solid #D3D3D3;
+  }
+}
+
+.social-media-icons {
+  float:right;
+  padding-top: 20px;
+}
+
+.rounded-social-media-btn {
+  background: #000;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -ms-border-radius: 20px;
+  font-size: 20px;
+  text-align: center;
+  margin-right: 10px;
+  float:left;
+  text-shadow: rgba(0,0,0,.01) 0 0 1px;
+
+  &:hover {
+    background-color: #333;
+  }
+}
+
+.ico-fix {
+  margin-top: 7px;
+  margin-left: 1px;
+  font-size: 17px !important;
+  color: #FFF;
+
+  &:hover {
+    color: #FFF;
+    text-decoration: none;
+  }
+}
+
+.address {
+  color: #777;
+  padding-top: 10px;
+  float: left;
+}
+
+
+/************** Fonts **************/
+
 
  @font-face {
    font-family: 'Proxima Nova';
@@ -51,4 +144,5 @@ $background: #EBEBEA;
  body {
    font-family: "Proxima Nova", Arial, sans-serif;
    font-weight: 200;
+   text-rendering: optimizeLegibility;
  }

@@ -16,12 +16,3 @@
 //= require turbolinks
 //= require_tree .
 //
-
-window.addEventListener("scroll", function() {
-    if (window.scrollY > 30) {
-        $('.navbar').fadeOut();
-    }
-    else {
-        $('.navbar').fadeIn();
-    }
-},false);
