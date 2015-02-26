@@ -29,6 +29,10 @@ $background: #FFF;
     font-size: 32pt;
     font-family: 'Proxima Nova';
     color: #333;
+
+    @media (max-width: $screen-sm-min) {
+      font-size: 24pt;
+    }
   }
 
   .navbar-toggle {
