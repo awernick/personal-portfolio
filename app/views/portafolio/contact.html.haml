@@ -1,22 +1,44 @@
 .jumbotron
 
-  %h2
-    Get In Contact
+  .col-md-12
+    .col-md-8
+      .row
+        %h2 Get In Contact
+      .row
+        = form_tag send_email_path do
+          .row
+            .col-md-6
+              = label_tag :first_name
+              = text_field_tag :first_name, nil, class: 'form-control', required: true, maxlength: 25
+            .col-md-6
+              = label_tag :last_name
+              = text_field_tag :last_name, nil, class: 'form-control', required: true, maxlength: 25
 
-  = form_tag send_email_path do
-    = label_tag :first_name
-    = text_field_tag :first_name, nil, required: true, maxlength: 25
+          .row
+            .col-md-12
+              = label_tag :email
+              = email_field_tag :email, nil, class: 'form-control', required: true, pattern: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
-    = label_tag :last_name
-    = text_field_tag :last_name, nil, required: true, maxlength: 25
+          .row
+            .col-md-12
+              = label_tag :subject
+              = text_field_tag :subject, nil, class: 'form-control', required: true, maxlength: 250
 
-    = label_tag :subject
-    = text_field_tag :subject, nil, required: true, maxlength: 250
+          .row
+            .col-md-12
+              = label_tag :message
+              = text_area_tag :message, nil, class: 'form-control', required: true, maxlength: 500
 
-    = label_tag :email
-    = email_field_tag :email, nil, required: true, pattern: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
-
-    = label_tag :message
-    = text_area_tag :message, nil, required: true, maxlength: 500
-
-    = button_tag 'Send', type: 'submit'
+          = button_tag 'Send', class: 'btn btn-default btn-lg', type: 'submit'
+    .col-md-1
+    .col-md-3.contact-info
+      .row
+        %h2 Contact Info
+      .row
+        465 Valle Suave Dr.
+      .row
+        El Paso, TX 79927
+      .row
+        (915) 240 - 8525
+      .row
+        alan.wernik@gmail.com

@@ -5,6 +5,7 @@ class ContactMailerPreview < ActionMailer::Preview
   def contact_me
     email_params = {'first_name' => 'Alan', 'last_name' => 'Wernick', 'subject' => 'Hello!',
                     'message' => 'Lorem ipsum dolorbitur ac iaculis sem. Prmagna nec est vehicula auctor.'}
+    
     ContactMailer.contact_me(email_params)
   end
 

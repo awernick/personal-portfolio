@@ -36,3 +36,41 @@ $background: #FFF;
   padding-bottom: 0;
   border-bottom: 0;
 }
+
+
+/************* Contact *************/
+
+
+  .alert-info {
+    padding-top: 15px;
+    background: #303030;
+    color: #FFF;
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    position: relative;
+    margin-bottom: -40px;
+  }
+
+  .contact-info {
+    line-height: 1.8;
+  }
+  
+  .form-control {
+    margin-bottom: 12px;
+  }
+
+  .btn-lg {
+    margin-top: 10px;
+    font-weight: 200;
+  }
+
+  h2 {
+    font-weight: 400;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+  }
+
+  label {
+    font-weight: 200;
+  }
