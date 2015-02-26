@@ -13,7 +13,7 @@ window.addEventListener 'scroll', (->
   return
 ), false
 
-# $ ->
-#   if $('.alert').length
-#     $('.alert').delay(2000).fadeOut(duration)
-#   return
+$ ->
+  if $('.alert').length
+    $('.alert').delay(2000).fadeOut(duration)
+  return
