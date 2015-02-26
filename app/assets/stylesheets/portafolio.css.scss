@@ -36,3 +36,56 @@ $background: #FFF;
   padding-bottom: 0;
   border-bottom: 0;
 }
+
+
+/************* Contact *************/
+
+
+  .alert-info {
+    padding-top: 15px;
+    background: #303030;
+    color: #FFF;
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    position: relative;
+    margin-bottom: -40px;
+  }
+
+  .contact-info {
+    line-height: 1.8;
+
+    @media (max-width: $screen-sm-min) {
+      text-align: center;
+    }
+
+    h2 {
+      @media (max-width: $screen-sm-min) {
+        margin-top: 70px;
+      }
+    }
+  }
+
+  .form-control {
+    margin-bottom: 12px;
+  }
+
+  .btn-lg {
+    margin-top: 10px;
+    font-weight: 200;
+  }
+
+
+  h2 {
+    font-weight: 400;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+
+    @media (max-width: $screen-sm-min) {
+      text-align: center;
+    }
+  }
+
+  label {
+    font-weight: 200;
+  }
