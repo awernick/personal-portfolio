@@ -71,12 +71,18 @@ $background: #FFF;
   }
 
   .btn-lg {
+    height: 45px;
     margin-top: 10px;
     font-weight: 200;
   }
 
+  .btn-md {
+    margin-top: 20px;
+  }
+
 
   h2 {
+    font-size: 22px;
     font-weight: 400;
     padding-bottom: 25px;
     text-transform: uppercase;
