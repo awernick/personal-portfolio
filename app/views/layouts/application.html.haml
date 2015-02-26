@@ -8,6 +8,8 @@
     = csrf_meta_tags
   %body
     = render './layouts/header'
-    .container
+    .container.content
+      - flash.each do |message_type, message|
+        .alert{ class: message_type }= message
       = yield
     = render './layouts/footer'
