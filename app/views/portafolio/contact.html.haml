@@ -3,20 +3,20 @@
   %h2
     Get In Contact
 
-  = form_tag send_email_path do |f|
+  = form_tag send_email_path do
     = label_tag :first_name
-    = text_field_tag :first_name
+    = text_field_tag :first_name, nil, required: true, maxlength: 25
 
     = label_tag :last_name
-    = text_field_tag :last_name
+    = text_field_tag :last_name, nil, required: true, maxlength: 25
 
     = label_tag :subject
-    = text_field_tag :subject
+    = text_field_tag :subject, nil, required: true, maxlength: 250
 
     = label_tag :email
-    = email_field_tag :email
+    = email_field_tag :email, nil, required: true, pattern: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 
     = label_tag :message
-    = text_area_tag :message
+    = text_area_tag :message, nil, required: true, maxlength: 500
 
     = button_tag 'Send', type: 'submit'
