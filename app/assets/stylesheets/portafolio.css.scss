@@ -54,8 +54,18 @@ $background: #FFF;
 
   .contact-info {
     line-height: 1.8;
+
+    @media (max-width: $screen-sm-min) {
+      text-align: center;
+    }
+
+    h2 {
+      @media (max-width: $screen-sm-min) {
+        margin-top: 70px;
+      }
+    }
   }
-  
+
   .form-control {
     margin-bottom: 12px;
   }
@@ -65,10 +75,15 @@ $background: #FFF;
     font-weight: 200;
   }
 
+
   h2 {
     font-weight: 400;
     padding-bottom: 25px;
     text-transform: uppercase;
+
+    @media (max-width: $screen-sm-min) {
+      text-align: center;
+    }
   }
 
   label {

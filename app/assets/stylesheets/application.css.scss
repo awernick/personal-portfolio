@@ -10,11 +10,10 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
- *= require font-kit-rails/open-sans
- *
  */
+
+@import 'custom.css.scss';
+@import 'portafolio.css.scss';
 
 $background: #FFF;
 
@@ -30,6 +29,10 @@ $background: #FFF;
     font-size: 32pt;
     font-family: 'Proxima Nova';
     color: #333;
+  }
+
+  .navbar-toggle {
+    border-color: #FFF;
   }
 }
 
