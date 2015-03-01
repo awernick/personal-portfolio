@@ -37,6 +37,29 @@ $background: #FFF;
   border-bottom: 0;
 }
 
+/************** Resume **************/
+
+.portfolio-row {
+  h2 {
+    font-weight: 200;
+    text-align: center;
+  }
+}
+
+.portfolio-img {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  filter: grayscale(100%);
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+
+  &:hover {
+    filter: none;
+  -webkit-filter: grayscale(0%);
+  }
+}
 
 /************* Contact *************/
 
