@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 $background: #FFF;
+@import 'custom.css.scss';
 
 /************** Index **************/
 
@@ -24,6 +25,7 @@ $background: #FFF;
 }
 
 .category {
+  text-align:right;
   font-weight: 400;
   font-size: 22px;
   color: #4A4A43;
@@ -35,8 +37,102 @@ $background: #FFF;
 .last {
   padding-bottom: 0;
   border-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 .subcategory {
   margin-top: 0px;
 }
+
+.portfolio-row {
+  h2 {
+    font-weight: 200;
+    text-align: center;
+  }
+}
+
+.portfolio-img {
+  width: 254px;
+  height: 254px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  filter: grayscale(100%);
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+
+  &:hover {
+    filter: none;
+  -webkit-filter: grayscale(0%);
+  }
+}
+
+.employment {
+  margin-bottom: 40px;
+}
+
+.job-heading {
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.employer-desc {
+  color: #777;
+}
+
+/************* Contact *************/
+
+
+  .alert-info {
+    padding-top: 15px;
+    background: #303030;
+    color: #FFF;
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    position: relative;
+    margin-bottom: -40px;
+  }
+
+  .contact-info {
+    line-height: 1.8;
+
+    @media (max-width: $screen-sm-min) {
+      text-align: center;
+    }
+
+    h2 {
+      @media (max-width: $screen-sm-min) {
+        margin-top: 70px;
+      }
+    }
+  }
+
+  .form-control {
+    margin-bottom: 12px;
+  }
+
+  .btn-lg {
+    height: 45px;
+    margin-top: 10px;
+    font-weight: 200;
+  }
+
+  .btn-md {
+    margin-top: 20px;
+  }
+
+
+  h2 {
+    font-size: 22px;
+    font-weight: 400;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+
+    @media (max-width: $screen-sm-min) {
+      text-align: center;
+    }
+  }
+
+  label {
+    font-weight: 200;
+  }

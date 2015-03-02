@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   root 'portafolio#index'
 
   # Portfolio Routes
-  get 'portfolio'   =>  'portafolio#portfolio'
-  get 'contact'     =>  'portafolio#contact'
-  get 'resume'      =>  'portafolio#resume'
-
+  post 'send_email'         =>  'portafolio#send_contact_email'
+  get  'portfolio'          =>  'portafolio#portfolio'
+  get  'contact'            =>  'portafolio#contact'
+  get  'resume'             =>  'portafolio#resume'
 end

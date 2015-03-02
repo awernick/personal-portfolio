@@ -12,3 +12,8 @@ window.addEventListener 'scroll', (->
     $('.navbar').fadeIn(duration)
   return
 ), false
+
+$ ->
+  if $('.alert').length
+    $('.alert').delay(2000).fadeOut(duration)
+  return
