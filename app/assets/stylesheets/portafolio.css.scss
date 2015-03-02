@@ -32,6 +32,10 @@ $background: #FFF;
   line-height: 1.4em;
   text-transform: uppercase;
   padding-bottom: 20px;
+
+  @media (max-width: $screen-md-min) {
+    text-align: left;
+  }
 }
 
 .last {
@@ -43,6 +47,13 @@ $background: #FFF;
 .subcategory {
   margin-top: 0px;
 }
+
+.last-sub {
+  @media (max-width: $screen-md-min) {
+    margin-top: 40px;
+  }
+}
+
 
 .portfolio-row {
   h2 {
@@ -67,15 +78,28 @@ $background: #FFF;
 }
 
 .employment {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .job-heading {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-weight: 400;
 }
 
 .employer-desc {
+  color: #777;
+}
+
+.education {
+  margin-bottom: 60px;
+}
+
+.education-type {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.education-school {
   color: #777;
 }
 
