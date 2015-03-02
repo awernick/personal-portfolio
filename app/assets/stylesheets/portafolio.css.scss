@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 $background: #FFF;
+@import 'custom.css.scss';
 
 /************** Index **************/
 
@@ -24,12 +25,17 @@ $background: #FFF;
 }
 
 .category {
+  text-align:right;
   font-weight: 400;
   font-size: 22px;
   color: #4A4A43;
   line-height: 1.4em;
   text-transform: uppercase;
   padding-bottom: 20px;
+
+  @media (max-width: $screen-md-min) {
+    text-align: left;
+  }
 }
 
 .last {
@@ -38,7 +44,16 @@ $background: #FFF;
   margin-bottom: 0 !important;
 }
 
-/************** Resume **************/
+.subcategory {
+  margin-top: 0px;
+}
+
+.last-sub {
+  @media (max-width: $screen-md-min) {
+    margin-top: 40px;
+  }
+}
+
 
 .portfolio-row {
   h2 {
@@ -60,6 +75,32 @@ $background: #FFF;
     filter: none;
   -webkit-filter: grayscale(0%);
   }
+}
+
+.employment {
+  margin-bottom: 60px;
+}
+
+.job-heading {
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.employer-desc {
+  color: #777;
+}
+
+.education {
+  margin-bottom: 60px;
+}
+
+.education-type {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.education-school {
+  color: #777;
 }
 
 /************* Contact *************/
