@@ -31,5 +31,5 @@ pickle-email-*.html
 bower.json
 
 # Vim Temp Files
-.swp
-.swo
+*.swp
+*.swo
