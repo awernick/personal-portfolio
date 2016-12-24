@@ -9,3 +9,5 @@ env
 env*
 dist
 build
+venv
+node_modules
