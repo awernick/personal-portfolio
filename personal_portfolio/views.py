@@ -17,3 +17,7 @@ def portfolio():
 def contact():
     return render_template('contact.html')
 
+@app.route('/contact', methods=['POST'])
+def create_contact_form():
+    return render_template('contact.html')
+
