@@ -1,11 +1,17 @@
 @import "bourbon";
 @import "neat";
 @import "bem-constructor";
+
 @import "variables";
 @import "typography";
+@import "layout";
 
 // Components
 @import "components/nav";
 @import "components/footer";
 
 // Global Styles
+body {
+	font-family: 'Proxima Nova' $helvetica;
+  font-weight: 400;
+}

@@ -11,3 +11,5 @@ dist
 build
 venv
 node_modules
+
+font_awesome

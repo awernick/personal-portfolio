@@ -1,8 +1,7 @@
 @include component('menu') {
   @include pad(10px 15px 10px);
-  @include span-columns(12);
+  @include row();
   border-bottom: 1px $light_grey solid;
-	font-family: 'Proxima Nova' $helvetica;
   font-weight: 200;
   a {
     text-decoration: none;
@@ -22,6 +21,7 @@
   @include element('items') {
     @include margin(0px);
     float: right;
+    list-style: none;
   }
 
   @include element('item') {

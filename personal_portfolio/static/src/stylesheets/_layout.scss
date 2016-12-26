@@ -1,0 +1,7 @@
+@include object('container') {
+  @include outer-container(1170px);
+}
+
+@include object('content') {
+  @include pad(48px 60px);
+}

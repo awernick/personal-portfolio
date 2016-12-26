@@ -1,0 +1,27 @@
+@include component('footer') {
+  @include margin(68px 0px 20px);
+  @include pad(15px 15px 0px);
+  @include row();
+  border-top: 1px $light_grey solid;
+
+  @include element('social-icons') {
+    float: right;
+    list-style: none;
+    margin-top: 0px;
+  }
+
+  @include element('social-icon') {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 20px;
+    display: inline-block;
+    background-color: #000;
+    margin-right: 7px;
+    a {
+      text-decoration: none;
+      color: white;
+      margin-top: 7px;
+    }
+  }
+}
