@@ -46,7 +46,11 @@ gulp.task('fonts', function() {
 })
 
 gulp.task('clean', function() {
-    del([static_path + '/app.js', static_path + '/app.css']);
+    del([
+      static_path + '/app.js', 
+      static_path + '/app.css', 
+      paths.fonts + '/font_awesome'
+    ]);
 })
 
 gulp.task('watch', function() {

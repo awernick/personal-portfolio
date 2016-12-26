@@ -3,5 +3,21 @@
 }
 
 @include object('content') {
-  @include pad(48px 60px);
+  @include pad(60px 60px);
+  @include row();
 }
+
+@include object('biography') {
+  @include shift(1);
+  @include span-columns(10);
+  font-size: em(18);
+  line-height: em(24);
+  font-weight: 200;
+  text-align: justify;
+
+  @include element('image') {
+    width: 200px;
+    float: left;
+    margin: 28px 30px 20px 0px;
+  }
+}  
