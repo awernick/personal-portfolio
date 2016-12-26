@@ -1,0 +1,78 @@
+@include object('section') {
+  @include row();
+  padding: 40px 0px;
+  border-bottom: 1px $light_grey solid;
+
+  @include modifier('first') {
+    padding-top: 0px;
+  }
+
+  @include modifier('last') {
+    padding-bottom: 0px;
+    border-bottom: 0px;
+  }
+
+  @include element('title') {
+    @include span-columns(3);
+    h2 {
+      font-size: em(22);
+      font-weight: 400;
+      color: $header_grey;
+      text-transform: uppercase;
+      text-align: right;
+    }
+  }
+
+  @include element('content') {
+    @include shift(1);
+    @include span-columns(8);
+  }
+
+  @include element('list') {
+    @include span-columns(1 of 2);
+    @include omega();
+    h3 {
+      font-size: 1em;
+      font-weight: 500;
+    }
+    ul li {
+      font-weight: 200;
+      line-height: em(28);
+    }
+  }
+}
+
+@include component('entry') {
+  padding-bottom: 30px;
+  font-weight: 200;
+
+  @include element('header') {
+    margin-bottom: 8px;
+    font-size: 1em;
+    font-weight: 500;
+  }
+
+  @include element('subheader') {
+    color: $grey;
+    font-weight: 200;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: em(26);
+    font-size: 1em;
+  }
+
+  @include element('postinfo') {
+    padding-top: 10px;
+    color: $grey;
+    font-weight: 200;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: em(26);
+    font-size: 1em;
+  }
+
+  @include element('description') {
+    margin: 0px;
+    line-height: em(26);
+  }
+}

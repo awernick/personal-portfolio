@@ -10,8 +10,7 @@
 @include object('biography') {
   @include shift(1);
   @include span-columns(10);
-  font-size: em(18);
-  line-height: em(24);
+  line-height: em(26);
   font-weight: 200;
   text-align: justify;
 

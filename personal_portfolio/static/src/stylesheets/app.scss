@@ -9,6 +9,7 @@
 // Components
 @import "components/nav";
 @import "components/footer";
+@import "components/section";
 
 // Global Styles
 body {
@@ -16,4 +17,5 @@ body {
   font-weight: 400;
   color: $black;
   text-rendering: optimizeLegibility;
+  font-size: 18px;
 }

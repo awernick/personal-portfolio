@@ -3,9 +3,20 @@
     <a href="/">Alan Wernick</a>
   </div>
   <ul class="c-menu__items">
-     <li class="c-menu__item"><a href="/">Home </a></li>
-     <li class="c-menu__item"><a href="/">Resume </a></li>
-     <li class="c-menu__item"><a href="/">Portfolio </a></li>
-     <li class="c-menu__item"><a href="/">Contact </a></li>
+     <li class="c-menu__item">
+       <a href="{{ url_for('index') }}">Home </a>
+     </li>
+
+     <li class="c-menu__item">
+       <a href="{{ url_for('resume') }}">Resume </a>
+     </li>
+
+     <li class="c-menu__item">
+       <a href="{{ url_for('portfolio') }}">Portfolio </a>
+     </li>
+
+     <li class="c-menu__item">
+       <a href="{{ url_for('contact') }}">Contact </a>
+     </li>
   </ul>
 </nav>
