@@ -1,1 +1,11 @@
-@import "all";
+@import "bourbon";
+@import "neat";
+@import "bem-constructor";
+@import "variables";
+@import "typography";
+
+// Components
+@import "components/nav";
+@import "components/footer";
+
+// Global Styles

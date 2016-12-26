@@ -1,0 +1,38 @@
+@include component('menu') {
+  @include pad(10px 15px 10px);
+  @include span-columns(12);
+  border-bottom: 1px $light_grey solid;
+	font-family: 'Proxima Nova' $helvetica;
+  font-weight: 200;
+  a {
+    text-decoration: none;
+  }
+
+  @include element('logo') {
+    @include pad(4px 15px);
+    display: inline-block;
+    font-size: em(38);
+    a {
+      color: $black;
+      line-height: 20px;
+      height: 50px;
+    }
+  }
+
+  @include element('items') {
+    @include margin(0px);
+    float: right;
+  }
+
+  @include element('item') {
+    @include pad(15px);
+    display: inline-block; 
+    a {
+      font-size: em(14);
+      color: $grey;
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+}

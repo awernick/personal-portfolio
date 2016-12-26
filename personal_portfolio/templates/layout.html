@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <title>Alan Wernick</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}"/>
     <script src="{{ url_for('static', filename='app.js') }}"></script>
-</head>
-<body>
-    {% include "shared/_navbar.html" %}
-    {% block body %}
-    {% endblock %}
-    {% include "shared/_footer.html" %}
-</body>
+  </head>
+  <body>
+    <div class="o-container">
+      {% include "shared/_navbar.html" %}
+      {% block body %}
+      {% endblock %}
+      {% include "shared/_footer.html" %}
+    </div>
+  </body>
 </html>
