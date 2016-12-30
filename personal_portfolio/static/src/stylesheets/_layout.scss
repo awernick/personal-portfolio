@@ -17,6 +17,7 @@
   line-height: em(26);
   font-weight: 200;
   text-align: justify;
+  margin-bottom: 60px;
 
   @include element('image') {
     width: 200px;

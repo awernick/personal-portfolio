@@ -1,5 +1,5 @@
 @include component('footer') {
-  @include margin(68px 0px 20px);
+  @include margin(0px 0px 20px);
   @include pad(15px 15px 0px);
   @include row();
   border-top: 1px $light_grey solid;
