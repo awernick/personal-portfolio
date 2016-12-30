@@ -1,0 +1,32 @@
+@include component('flash-messages') {
+  list-style-type: none;
+  margin-bottom: -30px;
+  padding-left: 0px;
+}
+
+@include component('flash-message') {
+  padding: 20px 10px;
+  border: 1px solid $input_grey;
+
+  @include element('category') {
+    @extend .proxima-nova;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 0px 10px;
+  }
+
+  @include element('text') {
+    font-weight: 200;
+  }
+
+  @include modifier('success') {
+    border-color: $green;
+    color: $green;
+  }
+
+  @include modifier('danger') {
+    border-color: $red;
+    color: $red;
+  }
+}
+

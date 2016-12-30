@@ -1,4 +1,4 @@
-from flask import g, render_template, abort, request, redirect
+from flask import g, render_template, abort, request, redirect, flash
 from . import app, mail
 from .forms import ContactForm
 from flask_mail import Message
@@ -33,8 +33,8 @@ def create_contact_form():
                                    last_name=form.last_name.data,
                                    message=form.message.data)
         mail.send(msg)
+        flash('Thank you! I will be in contact with you soon.', 'success')
         return redirect('/contact')
-    html = render_template('contact.html', form=form)
-    print(html)
-    return html
+    flash('Please fill in all fields and try again.', 'danger')
+    return render_template('contact.html', form=form)
 
