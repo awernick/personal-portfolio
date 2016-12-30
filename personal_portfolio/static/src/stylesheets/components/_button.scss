@@ -1,0 +1,10 @@
+@include component('btn') {
+  color: $black;
+  border: 1px solid $input_grey;
+  background-color: white;
+  padding: 10px 15px;
+  font-size: rem(16);
+  font-weight: 400;
+  font-family: 'Proxima Nova';
+  text-decoration: none;
+}

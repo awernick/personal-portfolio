@@ -1,0 +1,44 @@
+@include component('contact-form') {
+  @include span-columns(8 of 12);
+
+  @include element('title') {
+    @include row();
+  }
+
+  @include element('input-group') {
+    @include row();
+    @include omega();
+    margin-bottom: 20px;
+
+    label {
+      @include span-columns(12);
+      @extend .proxima-nova;
+      font-size: em(18);
+      color: $grey;
+      margin-bottom: 8px;
+    }
+
+    #{$all-text-inputs} {
+      @include span-columns(12);
+      @extend .proxima-nova;
+      @include prefixer(box-shadow, inset 0 1px 1px rgba(0,0,0,0.075), webkit spec);
+      border: 1px solid $input_grey;
+      font-size: em(14px);
+      padding: 14px 6px;
+    }
+
+    input {
+      height: rem(34);
+    }
+
+    @include modifier('half') {
+      @include span-columns(6 of 12);
+      @include omega(3n);
+    }
+  }
+
+  @include element('submit') {
+    @include span-columns(12);
+    margin-top: 8px;
+  }
+}

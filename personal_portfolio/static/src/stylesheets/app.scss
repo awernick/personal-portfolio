@@ -9,7 +9,10 @@
 // Components
 @import "components/nav";
 @import "components/footer";
+@import "components/button";
 @import "components/section";
+@import "components/contact_form";
+@import "components/contact_info";
 
 // Global Styles
 body {
@@ -18,4 +21,16 @@ body {
   color: $black;
   text-rendering: optimizeLegibility;
   font-size: 18px;
+}
+
+h2 {
+  font-size: em(22);
+  font-weight: 400;
+  color: $header_grey;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: 500;
 }

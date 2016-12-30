@@ -16,30 +16,14 @@ $fa-font-path: 'fonts/font_awesome/';
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Proxima Nova';
-    src: font-url('static/fonts/ProximaNova-Regular.otf')  format("opentype");
-    font-weight: normal;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: 'Proxima Nova';
-    src: font-url('static/fonts/ProximaNova-Light.otf')  format("opentype");
+@include font-face('Proxima Nova','fonts/ProximaNova-Regular.otf', $file-formats: opentype)
+@include font-face('Proxima Nova','fonts/ProximaNova-Light.otf', 200, $file-formats: opentype)
+@include font-face('Proxima Nova','fonts/ProximaNova-Semibold.otf', 600, $file-formats: opentype)
+@include font-face('Proxima Nova','fonts/ProximaNova-Bold.otf', 700, $file-formats: opentype)
+
+.proxima-nova {
     font-weight: 200;
-    font-style: normal;
+    font-family: 'Proxima Nova';
 }
 
-@font-face {
-    font-family: 'Proxima Nova';
-    src: font-url('static/fonts/ProximaNova-Semibold.otf')  format("opentype");
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Proxima Nova';
-    src: font-url('static/fonts/ProximaNova-Bold.otf')  format("opentype");
-    font-weight: 700;
-    font-style: normal;
-}

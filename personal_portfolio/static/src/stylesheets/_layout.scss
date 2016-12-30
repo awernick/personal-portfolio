@@ -1,3 +1,7 @@
+.subtitle {
+  margin-bottom: 30px;
+}
+
 @include object('container') {
   @include outer-container(1170px);
 }
