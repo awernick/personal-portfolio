@@ -1,39 +1,44 @@
 {% extends "layout.html" %}
 {% block body %}
   <div class="o-content">
-    <form class="c-contact-form">
+    <form class="c-contact-form" 
+          action="{{ url_for('create_contact_form') }}"
+          method="POST">
+
       <div class="c-contact-form__title subtitle">
         <h2>Get in Contact</h2>
       </div>
 
       <div class="c-contact-form__input-group c-contact-form__input-group--half">
-        <label for="first_name">First Name</label>
-        <input type="text" name="first_name"/>
+        {{ form.first_name.label }}
+        {{ form.first_name }}
       </div>
 
       <div class="c-contact-form__input-group c-contact-form__input-group--half">
-        <label for="last_name">Last Name</label>
-        <input type="text" name="last_name"/>
+        {{ form.last_name.label }}
+        {{ form.last_name }}
       </div>
 
       <div class="c-contact-form__input-group">
-        <label for="email">Email</label>
-        <input type="text" name="email">
+        {{ form.email.label }}
+        {{ form.email }}
       </div>
 
       <div class="c-contact-form__input-group">
-        <label for="subject">Subject</label>
-        <input type="text" name="subject"/>
+        {{ form.subject.label }}
+        {{ form.subject }}
       </div>
 
       <div class="c-contact-form__input-group">
-        <label for="message">Message</label>
-        <textarea name="message" rows="5"></textarea>
+        {{ form.message.label }}
+        {{ form.message(rows='5') }}
       </div>
 
       <div class="c-contact-form__submit">
         <input type="submit" value="Send" class="c-btn c-btn--small"/>
       </div>
+
+      {{ form.csrf_token }}
     </form>
 
     <div class="c-contact-info">
@@ -58,7 +63,7 @@
 
       <div class="c-contact-info__resume-btn">
         <a href="{{ url_for('static', filename='alanwernick_resume.pdf') }}" 
-          class="c-btn">
+           class="c-btn">
           Download Resume
         </a>
       </div>
