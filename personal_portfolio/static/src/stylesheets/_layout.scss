@@ -1,13 +1,9 @@
-.subtitle {
-  margin-bottom: 30px;
-}
-
 @include object('container') {
   @include outer-container(1170px);
 }
 
 @include object('content') {
-  @include pad(60px 60px);
+  @include pad(120px 60px 60px);
   @include row();
 }
 

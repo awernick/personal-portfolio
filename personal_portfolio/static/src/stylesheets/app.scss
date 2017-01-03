@@ -22,6 +22,7 @@ body {
   color: $black;
   text-rendering: optimizeLegibility;
   font-size: 18px;
+  margin: 0px;
 }
 
 h2 {
@@ -34,4 +35,8 @@ h2 {
 h3 {
   font-size: 1em;
   font-weight: 500;
+}
+
+.subtitle {
+  margin-bottom: 30px;
 }

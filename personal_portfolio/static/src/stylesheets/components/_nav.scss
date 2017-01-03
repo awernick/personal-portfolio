@@ -1,8 +1,12 @@
 @include component('menu') {
   @include pad(10px 15px 10px);
   @include row();
-  border-bottom: 1px $light_grey solid;
   font-weight: 200;
+  position: fixed;
+  background: white;
+  max-width: 1170px;
+  width: 100%;
+  border-bottom: 1px $light_grey solid;
   a {
     text-decoration: none;
   }
