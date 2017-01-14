@@ -53,7 +53,7 @@ gulp.task('clean', function() {
     ]);
 })
 
-gulp.task('watch', function() {
+gulp.task('watch', ['fonts', 'transpile_css', 'uglify'], function() {
     gulp.watch(paths.scripts, ['uglify']);
     gulp.watch(paths.stylesheets, ['transpile_css']);
     gulp.watch(paths.fonts, ['fonts']);
