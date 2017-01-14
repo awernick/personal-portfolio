@@ -24,10 +24,14 @@
 
   @include element('list') {
     @include span-columns(1 of 2);
-    @include omega();
+    @include omega(2n);
     ul li {
       font-weight: 200;
       line-height: em(28);
+    }
+    @include modifier('full') {
+      @include span-columns(12);
+      @include omega();
     }
   }
 }
