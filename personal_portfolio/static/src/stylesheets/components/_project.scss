@@ -1,0 +1,49 @@
+@include object('project-group') {
+  @include row();
+  margin-bottom: 60px;
+
+  @include modifier('last') {
+    margin-bottom: 0px;
+  }
+}
+
+@include component('project') {
+  @include span-columns(1 of 3);
+  @include omega(4n);
+  @include proxima-nova;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  @include element('image') {
+    img {
+      @include filter(grayscale(100%));
+      @include transition(filter .2s, padding .2s);
+      padding: 8px;
+      max-width: 100%;
+      &:hover {
+        @include filter(initial);
+        padding: 0px;
+      }
+    }
+  }
+
+  @include element('description') {
+    margin-top: 10px;
+    border-top: 1px solid $light_grey;
+  }
+
+  @include element('title') {
+    margin-bottom: 8px;
+    font-size: 1.2em;
+    font-weight: 400;
+  }
+
+  @include element('subtitle') {
+    margin-top: 8px;
+    font-weight: 200;
+    font-size: .85em;
+  }
+}

@@ -4,26 +4,53 @@
 
 $fa-font-path: 'fonts/font_awesome/';
 @font-face {
-    font-family: 'FontAwesome';
-    src: url('#{$fa-font-path}/fontawesome-webfont.eot?v=#{$fa-version}');
-    src: url('#{$fa-font-path}/fontawesome-webfont.eot?#iefix&v=#{$fa-version}') format('embedded-opentype'),
-    url('#{$fa-font-path}/fontawesome-webfont.woff2?v=#{$fa-version}') format('woff2'),
-    url('#{$fa-font-path}/fontawesome-webfont.woff?v=#{$fa-version}') format('woff'),
-    url('#{$fa-font-path}/fontawesome-webfont.ttf?v=#{$fa-version}') format('truetype'),
-    url('#{$fa-font-path}/fontawesome-webfont.svg?v=#{$fa-version}#fontawesomeregular') format('svg');
-    //  src: url('#{$fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
+  font-family: 'FontAwesome';
+  src: url('#{$fa-font-path}/fontawesome-webfont.eot?v=#{$fa-version}');
+  src: url('#{$fa-font-path}/fontawesome-webfont.eot?#iefix&v=#{$fa-version}') format('embedded-opentype'),
+  url('#{$fa-font-path}/fontawesome-webfont.woff2?v=#{$fa-version}') format('woff2'),
+  url('#{$fa-font-path}/fontawesome-webfont.woff?v=#{$fa-version}') format('woff'),
+  url('#{$fa-font-path}/fontawesome-webfont.ttf?v=#{$fa-version}') format('truetype'),
+  url('#{$fa-font-path}/fontawesome-webfont.svg?v=#{$fa-version}#fontawesomeregular') format('svg');
+  //  src: url('#{$fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('/static/fonts/ProximaNova-Regular.otf')  format("opentype");
     font-weight: normal;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('/static/fonts/ProximaNova-Light.otf')  format("opentype");
+    font-weight: 200;
+    font-style: normal;
+}
 
-@include font-face('Proxima Nova','fonts/ProximaNova-Regular.otf', $file-formats: opentype)
-@include font-face('Proxima Nova','fonts/ProximaNova-Light.otf', 200, $file-formats: opentype)
-@include font-face('Proxima Nova','fonts/ProximaNova-Semibold.otf', 600, $file-formats: opentype)
-@include font-face('Proxima Nova','fonts/ProximaNova-Bold.otf', 700, $file-formats: opentype)
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('/static/fonts/ProximaNova-Semibold.otf')  format("opentype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('/static/fonts/ProximaNova-Bold.otf')  format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
 
 .proxima-nova {
-    font-weight: 200;
-    font-family: 'Proxima Nova';
+  font-weight: 200;
+  font-family: 'Proxima Nova';
+}
+
+@mixin proxima-nova {
+  font-weight: 200;
+  font-family: 'Proxima Nova' $helvetica;
 }
 

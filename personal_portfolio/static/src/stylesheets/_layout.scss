@@ -5,6 +5,11 @@
 @include object('content') {
   @include pad(120px 60px 60px);
   @include row();
+
+  @include element('subtitle') {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+  }
 }
 
 @include object('biography') {
