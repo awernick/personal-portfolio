@@ -5,6 +5,11 @@
   @include modifier('last') {
     margin-bottom: 0px;
   }
+
+  @include modifier('underlined') {
+    border-bottom: 1px solid $light_grey;
+    padding-bottom: 40px;
+  }
 }
 
 @include component('project') {
