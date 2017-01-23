@@ -2,7 +2,7 @@
 @import "../../../../node_modules/font-awesome/scss/_core.scss";
 @import "../../../../node_modules/font-awesome/scss/_icons.scss";
 
-$fa-font-path: 'fonts/font_awesome/';
+$fa-font-path: '/static/fonts/font_awesome/';
 @font-face {
   font-family: 'FontAwesome';
   src: url('#{$fa-font-path}/fontawesome-webfont.eot?v=#{$fa-version}');

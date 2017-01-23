@@ -13,13 +13,19 @@
   }
 
   @include element('title') {
-    @include span-columns(3);
-    text-align: right;
+    @include span-columns(12);
+    @include media($medium) {
+      @include span-columns(3);
+      text-align: right;
+    }
   }
 
   @include element('content') {
-    @include shift(1);
-    @include span-columns(8);
+    @include span-columns(12);
+    @include media($medium) {
+      @include shift(1);
+      @include span-columns(8);
+    }
   }
 
   @include element('list') {

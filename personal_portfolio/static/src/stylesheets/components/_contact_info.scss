@@ -1,6 +1,15 @@
 @include component('contact-info') {
-  @include shift(1);
-  @include span-columns(3 of 12);
+  @include span-columns(12);
+  text-align: center;
+  margin-top: 40px;
+
+
+  @include media($medium) {
+    @include shift(1);
+    @include span-columns(3 of 12);
+    text-align: left;
+    margin-top: 0px;
+  }
 
   @include element('details') {
     @extend .proxima-nova;

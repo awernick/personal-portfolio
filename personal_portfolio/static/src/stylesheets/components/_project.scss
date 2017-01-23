@@ -1,6 +1,5 @@
-@include object('project-group') {
+@include component('project-group') {
   @include row();
-  margin-bottom: 60px;
 
   @include modifier('last') {
     margin-bottom: 0px;
@@ -8,14 +7,40 @@
 
   @include modifier('underlined') {
     border-bottom: 1px solid $light_grey;
-    padding-bottom: 40px;
+    margin-bottom: 60px;
+  }
+
+  @include element('title') {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+
+    @include media($mobile) {
+      text-align: center;
+    }
   }
 }
 
 @include component('project') {
-  @include span-columns(1 of 3);
-  @include omega(4n);
   @include proxima-nova;
+
+  @include media($mobile) {
+    @include span-columns(12);
+    @include omega();
+    padding: 0px 25px;
+    margin-bottom: 40px;
+  }
+
+  @include media($tablet) {
+    @include span-columns(1 of 2);
+    @include omega(2n);
+    margin-bottom: 40px;
+  }
+
+  @include media($medium) {
+    @include span-columns(1 of 3);
+    @include omega(3n);
+    margin-bottom: 60px;
+  }
 
   a {
     text-decoration: none;
@@ -23,6 +48,7 @@
   }
 
   @include element('image') {
+
     img {
       @include filter(grayscale(100%));
       @include transition(filter .2s, padding .2s);
@@ -31,6 +57,12 @@
       &:hover {
         @include filter(initial);
         padding: 0px;
+      }
+
+      @include media($mobile) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
   }

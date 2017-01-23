@@ -10,3 +10,13 @@ $input_grey: #cccccc;
 
 // Fonts
 $em-base: 18px;
+
+// Breakpoints
+$bp_desktop: 992px;
+$bp_medium: 778px;
+$bp_small: 500px;
+
+$desktop: new-breakpoint($bp_desktop);
+$medium: new-breakpoint($bp_medium);
+$tablet: new-breakpoint(max-width $bp_medium min-width $bp-small);
+$mobile: new-breakpoint(max-width $bp_small);

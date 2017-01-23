@@ -1,5 +1,9 @@
 @include component('contact-form') {
-  @include span-columns(8 of 12);
+  @include span-columns(12);
+
+  @include media($medium) {
+    @include span-columns(8 of 12);
+  }
 
   @include element('title') {
     @include row();
