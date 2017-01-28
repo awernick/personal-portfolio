@@ -1,8 +1,12 @@
 @include component('flash-messages') {
   list-style-type: none;
   margin-bottom: -90px;
-  padding-left: 0px;
-  padding-top: 105px;
+  padding: 105px 10px 0px;
+
+  @include media($mobile) {
+    text-align: center;
+    padding: 105px 10px 30px;
+  }
 }
 
 @include component('flash-message') {
@@ -14,6 +18,10 @@
     font-weight: 400;
     text-transform: uppercase;
     padding: 0px 10px;
+
+    @include media($mobile) {
+      display: none;
+    }
   }
 
   @include element('text') {
