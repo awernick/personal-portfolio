@@ -3,9 +3,12 @@
   margin-bottom: -90px;
   padding: 105px 10px 0px;
 
+  @include media(max-width $tablet) {
+    padding: 105px 10px 30px;
+  }
+
   @include media($mobile) {
     text-align: center;
-    padding: 105px 10px 30px;
   }
 }
 
