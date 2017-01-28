@@ -18,22 +18,4 @@ namespace :deploy do
       end
     end
   end
-
-  desc 'Install yarn dependencies'
-  task :yarn do
-    on roles(:app) do |host|
-      within("#{current_path}") do
-        execute "cd #{current_path}; yarn"
-      end
-    end
-  end
-
-  desc 'Generate static assets'
-  task :generate_assets do
-    on roles(:app) do |host|
-      within("#{current_path}") do
-        execute "cd #{current_path}; gulp"
-      end
-    end
-  end
 end
