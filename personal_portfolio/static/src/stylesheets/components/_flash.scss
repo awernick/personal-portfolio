@@ -1,7 +1,8 @@
 @include component('flash-messages') {
   list-style-type: none;
-  margin-bottom: -30px;
+  margin-bottom: -90px;
   padding-left: 0px;
+  padding-top: 105px;
 }
 
 @include component('flash-message') {
