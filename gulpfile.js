@@ -63,4 +63,4 @@ gulp.task('watch', ['fonts', 'transpile_css', 'uglify'], function() {
     gulp.watch(input_paths.fonts, ['fonts']);
 })
 
-gulp.task('default', ['clean', 'uglify', 'transpile_css', 'fonts', 'watch']);
+gulp.task('default', ['clean', 'uglify', 'transpile_css', 'fonts']);
