@@ -16,6 +16,7 @@ class Config(object):
 
 class ProductionConfig(Config):
     DEBUG = False
+    SECRET_KEY = environ.get('PORTFOLIO_SECRET_KEY')
 
 
 class StagingConfig(Config):
