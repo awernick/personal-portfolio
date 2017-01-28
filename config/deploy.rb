@@ -3,7 +3,6 @@ lock '3.7.1'
 
 set :application, 'personal-portfolio'
 set :repo_url, 'git@github.com:awernick/personal-portfolio.git'
-set :branch, 'flask'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
