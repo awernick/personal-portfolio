@@ -3,7 +3,7 @@
   margin-bottom: -90px;
   padding: 105px 10px 0px;
 
-  @include media(max-width $tablet) {
+  @include media(max-width $bp_medium) {
     padding: 105px 10px 30px;
   }
 
