@@ -18,4 +18,13 @@ namespace :deploy do
       end
     end
   end
+
+  desc 'Restart nginx and portfolio service'
+  task :restart do
+    on roles(:app) do |host|
+      within("#{current_path}") do
+        execute "sudo systemctl restart portfolio"
+      end
+    end
+  end
 end
