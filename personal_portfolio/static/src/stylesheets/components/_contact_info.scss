@@ -1,0 +1,38 @@
+@include component('contact-info') {
+  @include span-columns(12);
+  text-align: center;
+  margin-top: 40px;
+
+
+  @include media($medium) {
+    @include shift(1);
+    @include span-columns(3 of 12);
+    text-align: left;
+    margin-top: 0px;
+  }
+
+  @include element('details') {
+    @extend .proxima-nova;
+    list-style-type: none;
+    padding-left: 0px;
+    color: $grey;
+  }
+
+  @include element('detail') {
+    margin-bottom: 12px;
+
+    @include modifier('link') {
+      a {
+        color: $grey;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  @include element('resume-btn') {
+    margin-top: 30px;
+  }
+}

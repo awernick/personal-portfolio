@@ -1,0 +1,22 @@
+// Colors
+$black: #333333;
+$red: #DB4D4D;
+$green: #33CC33;
+$logo_grey: #5e5e5e;
+$header_grey: #4A4A43;
+$grey: #777777;
+$light_grey: #dddddd;
+$input_grey: #cccccc;
+
+// Fonts
+$em-base: 18px;
+
+// Breakpoints
+$bp_desktop: 992px;
+$bp_medium: 778px;
+$bp_small: 500px;
+
+$desktop: new-breakpoint($bp_desktop);
+$medium: new-breakpoint($bp_medium);
+$tablet: new-breakpoint(max-width $bp_medium min-width $bp-small);
+$mobile: new-breakpoint(max-width $bp_small);

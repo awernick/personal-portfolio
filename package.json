@@ -1,0 +1,21 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website",
+  "main": "app.py",
+  "repository": "git@github.com:awernick/personal-portfolio.git",
+  "author": "Alan Wernick",
+  "license": "MIT",
+  "devDependencies": {
+    "bourbon": "^4.2.7",
+    "bourbon-neat": "^1.8.0",
+    "del": "^2.2.2",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-sass": "^3.0.0",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-uglify": "^2.0.0"
+  }
+}

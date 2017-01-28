@@ -1,0 +1,72 @@
+{% extends "layout.html" %}
+{% block body %}
+  <div class="o-content">
+    <form class="c-contact-form" 
+          action="{{ url_for('create_contact_form') }}"
+          method="POST">
+
+      <div class="c-contact-form__title subtitle">
+        <h2>Get in Contact</h2>
+      </div>
+
+      <div class="c-contact-form__input-group c-contact-form__input-group--half">
+        {{ form.first_name.label }}
+        {{ form.first_name }}
+      </div>
+
+      <div class="c-contact-form__input-group c-contact-form__input-group--half">
+        {{ form.last_name.label }}
+        {{ form.last_name }}
+      </div>
+
+      <div class="c-contact-form__input-group">
+        {{ form.email.label }}
+        {{ form.email }}
+      </div>
+
+      <div class="c-contact-form__input-group">
+        {{ form.subject.label }}
+        {{ form.subject }}
+      </div>
+
+      <div class="c-contact-form__input-group">
+        {{ form.message.label }}
+        {{ form.message(rows='5') }}
+      </div>
+
+      <div class="c-contact-form__submit">
+        <input type="submit" value="Send" class="c-btn c-btn--small"/>
+      </div>
+
+      {{ form.csrf_token }}
+    </form>
+
+    <div class="c-contact-info">
+      <div class="c-contact-info__title subtitle">
+        <h2>Contact Info</h2>
+      </div>
+
+      <ul class="c-contact-info__details">
+        <li class="c-contact-info__detail">
+          465 Valle Suave Dr
+        </li>
+        <li class="c-contact-info__detail">
+          El Paso, Texas 79927
+        </li>
+        <li class="c-contact-info__detail">
+          (915) 240 - 8252
+        </li>
+        <li class="c-contact-info__detail c-contact-info__detail--link">
+          <a href="mailto:alan.wernick@gmail.com">alan.wernik@gmail.com</a>
+        </li>
+      </ul>
+
+      <div class="c-contact-info__resume-btn">
+        <a href="{{ url_for('static', filename='alanwernick_resume.pdf') }}" 
+           class="c-btn">
+          Download Resume
+        </a>
+      </div>
+    </div>
+  </div>
+{% endblock %}

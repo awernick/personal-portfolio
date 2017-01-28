@@ -1,0 +1,47 @@
+@import "bourbon";
+@import "neat";
+@import "bem-constructor";
+
+@import "variables";
+@import "typography";
+@import "layout";
+
+// Components
+@import "components/nav";
+@import "components/flash";
+@import "components/footer";
+@import "components/button";
+@import "components/section";
+@import "components/project";
+@import "components/contact_form";
+@import "components/contact_info";
+
+// Global Styles
+body {
+	font-family: 'Proxima Nova' $helvetica;
+  font-weight: 400;
+  color: $black;
+  text-rendering: optimizeLegibility;
+  font-size: 18px;
+  margin: 0px;
+
+  @include media($mobile) {
+    font-size: 16px;
+  }
+}
+
+h2 {
+  font-size: em(22);
+  font-weight: 400;
+  color: $header_grey;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.subtitle {
+  margin-bottom: 30px;
+}

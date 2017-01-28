@@ -1,0 +1,82 @@
+@include component('menu') {
+  @include pad(10px 15px 10px);
+  @include row();
+  font-weight: 200;
+  position: fixed;
+  background: white;
+  max-width: 1170px;
+  width: 100%;
+  border-bottom: 1px $light_grey solid;
+  z-index: 999;
+
+  a {
+    text-decoration: none;
+  }
+
+  @include element('logo') {
+    @include pad(4px 15px);
+    display: inline-block;
+    font-size: em(38);
+    a {
+      color: $black;
+      line-height: 20px;
+      height: 50px;
+    }
+  }
+
+  @include element('items') {
+    @include margin(0px);
+    list-style: none;
+    padding-left: 0px;
+    display: none;
+
+    @include media($medium) {
+      float: right;
+      display: block;
+      padding-left: 40px;
+    }
+
+    @include modifier('opened') {
+      @media (max-width: $bp_medium) {
+        margin-top: 10px;
+        border-top: 1px solid $light_grey;
+        display: block;
+      }
+    }
+  }
+
+  @include element('item') {
+    @include pad(15px);
+    @include media($medium) {
+      display: inline-block; 
+    }
+    a {
+      font-size: em(14);
+      color: $grey;
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+
+  @include element('toggle') {
+    float: right;
+    padding: 10px;
+    margin-right: 10px;
+    margin-top: 6px;
+    cursor: pointer;
+
+		@include media($medium) {
+      display: none;
+		}
+
+    .icon-bar {
+			background-color: #888;
+			display: block;
+			width: 22px;
+			height: 2px;
+			border-radius: 1px;
+      margin-bottom: 4px;
+    }
+  }
+}

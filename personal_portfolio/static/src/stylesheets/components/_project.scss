@@ -1,0 +1,86 @@
+@include component('project-group') {
+  @include row();
+
+  @include modifier('last') {
+    margin-bottom: 0px;
+  }
+
+  @include modifier('underlined') {
+    border-bottom: 1px solid $light_grey;
+    margin-bottom: 60px;
+  }
+
+  @include element('title') {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+
+    @include media($mobile) {
+      text-align: center;
+    }
+  }
+}
+
+@include component('project') {
+  @include proxima-nova;
+
+  @include media($mobile) {
+    @include span-columns(12);
+    @include omega();
+    padding: 0px 25px;
+    margin-bottom: 40px;
+  }
+
+  @include media($tablet) {
+    @include span-columns(1 of 2);
+    @include omega(2n);
+    margin-bottom: 40px;
+  }
+
+  @include media($medium) {
+    @include span-columns(1 of 3);
+    @include omega(3n);
+    margin-bottom: 60px;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  @include element('image') {
+
+    img {
+      @include filter(grayscale(100%));
+      @include transition(filter .2s, padding .2s);
+      padding: 8px;
+      max-width: 100%;
+      &:hover {
+        @include filter(initial);
+        padding: 0px;
+      }
+
+      @include media($mobile) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  @include element('description') {
+    margin-top: 10px;
+    border-top: 1px solid $light_grey;
+  }
+
+  @include element('title') {
+    margin-bottom: 8px;
+    font-size: 1.2em;
+    font-weight: 400;
+  }
+
+  @include element('subtitle') {
+    margin-top: 8px;
+    font-weight: 200;
+    font-size: .85em;
+  }
+}

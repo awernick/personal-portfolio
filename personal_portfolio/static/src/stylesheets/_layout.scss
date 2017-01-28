@@ -1,0 +1,42 @@
+@include object('container') {
+  @include outer-container(1170px);
+}
+
+@include object('content') {
+  $top: 120px;
+  $btm: 60px;
+
+  @include row();
+  @include pad(80px 15px $btm);
+
+  @include media($tablet) {
+    @include pad(80px 30px $btm);
+  }
+
+  @include media($medium) {
+    @include pad($top 60px $btm);
+  }
+}
+
+@include object('biography') {
+  @include span-columns(12);
+  line-height: em(26);
+  font-weight: 200;
+
+  @include media($medium) {
+    @include shift(1);
+    @include span-columns(10);
+    text-align: justify;
+    margin-bottom: 60px;
+  }
+
+  @include element('image') {
+    width: 200px;
+    margin: 28px auto 30px;
+    display: block;
+    @include media($medium) {
+      float: left;
+      margin: 28px 30px 20px 0px;
+    }
+  }
+}  

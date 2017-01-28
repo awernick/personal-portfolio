@@ -1,0 +1,16 @@
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    <ul class="c-flash-messages">
+      {% for category, message in messages %}
+        <li class="c-flash-message c-flash-message--{{ category }}">
+          <span class="c-flash-message__category">
+            {{ category }}
+          </span>
+          <span class="c-flash-message__text">
+            {{ message }}
+          </span>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
