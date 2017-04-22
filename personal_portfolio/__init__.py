@@ -1,11 +1,8 @@
-from os import environ
-from flask import Flask
-from flask_mail import Mail
+from flask import Blueprint, Flask, current_app as app
 
-app = Flask(__name__)
-app.config.from_object(environ['PORTFOLIO_APP_SETTINGS'])
+port_app = Blueprint('portfolio', __name__,
+                template_folder='templates', static_folder='static',
+                static_url_path='/static/')
 
-mail = Mail(app)
-
-import views
+from . import views
 

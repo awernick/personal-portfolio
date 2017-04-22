@@ -2,7 +2,7 @@
 {% block body %}
   <div class="o-content">
     <form class="c-contact-form" 
-          action="{{ url_for('create_contact_form') }}"
+          action="{{ url_for('portfolio.create_contact_form') }}"
           method="POST">
 
       <div class="c-contact-form__title subtitle">
@@ -62,7 +62,7 @@
       </ul>
 
       <div class="c-contact-info__resume-btn">
-        <a href="{{ url_for('static', filename='alanwernick_resume.pdf') }}" 
+        <a href="{{ url_for('portfolio.static', filename='alanwernick_resume.pdf') }}" 
            class="c-btn">
           Download Resume
         </a>
