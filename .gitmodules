@@ -1,0 +1,3 @@
+[submodule "speech2text"]
+	path = speech2text
+	url = https://github.com/smartsearch-hackdfw/speech2text.git
