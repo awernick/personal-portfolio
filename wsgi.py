@@ -1,5 +1,4 @@
 from personal_portfolio import app, port_app
-from speech2text import speech_app
 from flask import Flask, url_for, jsonify
 from flask_mail import Mail
 from os import environ
@@ -9,7 +8,6 @@ app.config.from_object(environ['PORTFOLIO_APP_SETTINGS'])
 mail = Mail(app)
 
 app.register_blueprint(port_app)
-app.register_blueprint(speech_app, url_prefix='/speech')
 
 def has_no_empty_params(rule):
     defaults = rule.defaults if rule.defaults is not None else ()
