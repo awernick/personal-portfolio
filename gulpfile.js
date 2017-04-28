@@ -8,7 +8,7 @@ var gulp          = require('gulp'),
     bourbon       = require('bourbon').includePaths,
     neat          = require('bourbon-neat').includePaths;
 
-const static_path = './personal_portfolio/static';
+const static_path = './personal_portfolio/static/portfolio';
 const src_path = static_path + '/src';
 const input_paths = {
     stylesheets: [src_path + '/stylesheets/**/*.scss'],

@@ -1,8 +1,9 @@
-@import "../../../../node_modules/font-awesome/scss/_variables.scss";
-@import "../../../../node_modules/font-awesome/scss/_core.scss";
-@import "../../../../node_modules/font-awesome/scss/_icons.scss";
+@import "../../../../../node_modules/font-awesome/scss/_variables.scss";
+@import "../../../../../node_modules/font-awesome/scss/_core.scss";
+@import "../../../../../node_modules/font-awesome/scss/_icons.scss";
 
-$fa-font-path: '/portfolio/fonts/font_awesome/';
+$font-path: "/portfolio/fonts";
+$fa-font-path: "#{$font-path}/font_awesome/";
 @font-face {
   font-family: 'FontAwesome';
   src: url('#{$fa-font-path}/fontawesome-webfont.eot?v=#{$fa-version}');
@@ -18,28 +19,28 @@ $fa-font-path: '/portfolio/fonts/font_awesome/';
 
 @font-face {
     font-family: 'Proxima Nova';
-    src: url('/static/fonts/ProximaNova-Regular.otf')  format("opentype");
+    src: url('#{$font-path}/ProximaNova-Regular.otf')  format("opentype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Proxima Nova';
-    src: url('/static/fonts/ProximaNova-Light.otf')  format("opentype");
+    src: url('#{$font-path}/ProximaNova-Light.otf')  format("opentype");
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Proxima Nova';
-    src: url('/static/fonts/ProximaNova-Semibold.otf')  format("opentype");
+    src: url('#{$font-path}/ProximaNova-Semibold.otf')  format("opentype");
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Proxima Nova';
-    src: url('/static/fonts/ProximaNova-Bold.otf')  format("opentype");
+    src: url('#{$font-path}/ProximaNova-Bold.otf')  format("opentype");
     font-weight: 700;
     font-style: normal;
 }
