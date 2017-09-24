@@ -46,6 +46,11 @@
   padding-bottom: 30px;
   font-weight: 200;
 
+  li {
+    padding-bottom: 15px;
+  }
+
+
   @include element('header') {
     margin-bottom: 8px;
   }
